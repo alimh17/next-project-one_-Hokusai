@@ -1,15 +1,17 @@
+import Article from '../components/home/article'
+import CarrouselComp from '../components/ui/carrousel'
+
 import { getJsonData } from '../utils/tool'
 
 
 const Home = ({ data }) => {
-  console.log(data)
   return (
     <div >
-      ali
+      <CarrouselComp data={data.carrousel} />
+      <Article data={data.articles} />
     </div>
   )
 }
-
 
 export const getStaticProps = async () => {
   const data = await getJsonData()
