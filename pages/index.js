@@ -1,3 +1,5 @@
+import React from 'react'
+
 import Article from '../components/home/article'
 import CarrouselComp from '../components/ui/carrousel'
 
