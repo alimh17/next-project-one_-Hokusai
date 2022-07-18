@@ -17,7 +17,7 @@ const CarrouselComp = ({ data }) => {
   return (
     <Slider {...setting}>
       {data.map(item => (
-        <div key={item.key}>
+        <div key={item.id}>
           <div
             className='carrousel_wrapper'
             style={{ background: `url(/images/arts/${item.name}) no-repeat` }}
